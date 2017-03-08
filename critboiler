@@ -1,0 +1,15 @@
+       int sleep_time;
+
+        for (i = 0; i < NUM_REPEAT; i ++)
+       {
+                     sleep_time = rand(BOLIERMAN_TIME_01);
+                     usleep(sleep_time);
+           
+                     // the critical section starts here -------------------
+                     printf (“B%d starts his boiler …..\n”, my_BID);
+                         //  I am working hard now … 
+                     sleep_time = BOLIERMAN_TIME_02;
+                     usleep(sleep_time);
+                     printf (“B%d is leaving the bathing area ..\n”, my_BID);
+                     // the critical section ends here --------------------
+      }
