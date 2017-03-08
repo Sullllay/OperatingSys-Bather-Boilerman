@@ -1,0 +1,16 @@
+/* ********************************************************** *
+ * CS314 Project #2 solution                                                                           *
+ *                                                                                                                      *
+ * Your last-three:                                                                                            *
+ * Your course section #:                                                                                 *
+ *                                                                                                                      *
+ * Spring 2017                                                                                                 *
+ *                                                                                                                      *
+ * ********************************************************** */
+#define NUM_REPEAT                          50   // each boiler-man repeats 
+#define BATHER_TIME_01                300   // 300ms = 0.3 seconds
+#define BATHER_TIME_02                800   // 800ms = 0.8 seconds
+#define BOLIERMAN_TIME_01       1200   // 1200ms = 1.2 seconds
+#define BOLIERMAN_TIME_02       1600   // 1600ms = 1.6 seconds
+
+#include <……..>
