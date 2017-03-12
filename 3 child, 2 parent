@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main( void )
+{
+	pid_t process_id;
+	int i;
+	process_id = fork();
+	
+	if (process_id == 0){
+		for(i = 0; i<2; i++){
+			if(fork()==0){
+				printf("I am a child my process_id is: %d and my pid is: %d and my ppid is: %d\n", process_id, getpid(), getppid());
+			}
+		}
+		
+		
+	}else{
+		fork();
+		printf("I am a parent my process_id is: %d and my pid is: %d and my ppid is: %d\n", process_id, getpid(), getppid());
+	}
+	
+	
+
+}
